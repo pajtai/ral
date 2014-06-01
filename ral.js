@@ -16,8 +16,8 @@ function alias (pathString) {
     if (0 < location) {
         base = pathString.slice(0, location);
         pathString = pathString.slice(location);
-        return require(rootPath + '/' + pathsConfig[base] + pathString);
+        return require(rootPath + separator + pathsConfig[base] + pathString);
     } else {
-        return require(rootPath + '/' + pathsConfig[pathString]);
+        return require(rootPath + separator + pathsConfig[pathString]);
     }
 }

@@ -6,8 +6,8 @@ Require path aliasing.
 This module allows you to easily move files and directories in your app without having to update many require calls.
 Instead you update the relevant alias definition.
 
-The paths aliases to be used are defined in `require-paths.json`. This file is found be the `ral` node_module using,
- `findup(process.env.REQUIRE_PATHS || '*/require-paths.json')`. So by default you can put it in your root or customize
+The paths aliases to be used are defined in `require-paths.json`. This file is found by the `ral` module using,
+ `findup(process.env.REQUIRE_PATHS || '*/require-paths.json')`. The default is the root of your project, or customize
   its path using process.env.REQUIRE_PATHS.
 
 For example if `require-paths.json` is:
@@ -40,3 +40,4 @@ Release Notes:
 
 * 2014-06-02 0.0.1 Initial Release
 * 2014-06-03 0.1.0 Added tests & process.env.REQUIRE_PATHS
+* 2014-06-04 0.1.2 Removing hard coded path separator
