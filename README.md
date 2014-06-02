@@ -15,7 +15,7 @@ For example with the `require-paths.json` of
 }
 ```
 
-You can use `require('real')('constants')`
+You can use `require('ral')('constants')`
 
 Then if the location of contatns changes, only `require-paths.json` needs to be updated.
 
