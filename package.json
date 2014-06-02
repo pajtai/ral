@@ -1,5 +1,5 @@
 {
-  "name": "ra",
+  "name": "ral",
   "version": "0.0.0",
   "description": "Path aliasing for require.",
   "main": "ral.js",
