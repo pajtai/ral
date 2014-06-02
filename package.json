@@ -1,6 +1,6 @@
 {
   "name": "ral",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Path aliasing for require.",
   "main": "ral.js",
   "scripts": {

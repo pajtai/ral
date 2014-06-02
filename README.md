@@ -15,8 +15,20 @@ For example with the `require-paths.json` of
 }
 ```
 
-You can use `require('ral')('constants')`
+You can use 
+
+```javascript
+require('ral')('constants')
+```
+
+The above will give you `lib/constants`
 
 Then if the location of contatns changes, only `require-paths.json` needs to be updated.
 
-Subpaths coming soon.
+You can also add a path after the key. For example given `constants` above:
+
+```javascript
+require('ral')('constants/something')
+```
+
+will give you `lib/constants/something`.
