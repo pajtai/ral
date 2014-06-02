@@ -1,0 +1,23 @@
+{
+  "name": "ra",
+  "version": "0.0.0",
+  "description": "Path aliasing for require.",
+  "main": "ral.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pajtai/ral"
+  },
+  "keywords": [
+    "paths",
+    "alias",
+    "require"
+  ],
+  "author": "Peter Ajtai",
+  "license": "MIT",
+  "dependencies": {
+    "findup-sync": "~0.1.2"
+  }
+}

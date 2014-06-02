@@ -1,0 +1,17 @@
+.sass-cache/*
+.idea/*
+/node_modules
+/dist
+/cache
+/dump
+.vagrant/*
+configuration.json
+atlassian-ide-plugin.xml
+.DS_Store
+/dump
+build
+app/public/guide/main.js
+tests/unit/main.js
+gha.json
+ghapi.json
+npm-debug.log
