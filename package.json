@@ -1,10 +1,10 @@
 {
   "name": "ral",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Path aliasing for require.",
   "main": "ral.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "findup-sync": "~0.1.2"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1"
   }
 }

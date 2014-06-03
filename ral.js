@@ -3,7 +3,7 @@
 var findup          = require('findup-sync'),
     path            = require('path'),
     separator       = path.sep,
-    filePath        = findup('*/require-paths.json'),
+    filePath        = findup(process.env.REQUIRE_PATHS || '*/require-paths.json'),
     rootPath        = path.dirname(filePath),
     pathsConfig     = require(filePath);
 
