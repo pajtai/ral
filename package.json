@@ -1,10 +1,13 @@
 {
   "name": "ral",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Path aliasing for require.",
   "main": "ral.js",
   "scripts": {
     "test": "mocha test -R spec"
+  },
+  "engines" : {
+      "node" : ">=0.8"
   },
   "repository": {
     "type": "git",

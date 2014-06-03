@@ -40,3 +40,4 @@ Release Notes:
 
 * 2014-06-02 0.0.1 Initial Release
 * 2014-06-03 0.1.0 Added tests & process.env.REQUIRE_PATHS
+* 2014-06-03 0.1.1 Locking down node version to >=0.8
