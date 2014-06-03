@@ -1,4 +1,4 @@
-**R**equire **AL**ias [![Build Status](https://travis-ci.org/pajtai/ral.png?branch=master)](https://travis-ci.org/pajtai/ral)
+Require ALias [![Build Status](https://travis-ci.org/pajtai/ral.png?branch=master)](https://travis-ci.org/pajtai/ral)
 ================
 
 Require path aliasing.
