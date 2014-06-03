@@ -4,7 +4,7 @@
   "description": "Path aliasing for require.",
   "main": "ral.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test -R spec"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,9 @@
   "author": "Peter Ajtai",
   "license": "MIT",
   "dependencies": {
-    "findup-sync": "~0.1.2"
+    "findup-sync": "~0.1.3"
   },
   "devDependencies": {
-    "chai": "^1.9.1"
+    "chai": "~1.9.1"
   }
 }
