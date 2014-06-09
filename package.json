@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha test -R spec"
   },
+  "engines" : {
+      "node" : ">=0.8"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pajtai/ral"
