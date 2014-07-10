@@ -1,12 +1,27 @@
 'use strict';
 
-process.env.REQUIRE_PATHS = '*/test/require-paths.json';
+var ral = require('../ral'),
+    pkg = require('../package.json');
 
-var ral = require('../ral');
+ral.basePath = __dirname;
 
 require('chai').should();
 
 describe('ral', function() {
+
+    describe('helpers', function() {
+        it('version should be defined', function() {
+             ral.version.should.equal(pkg.version);
+        });
+        it('can retrieve the rootPath', function() {
+            ral.basePath.should.equal(__dirname);
+        });
+        it('can modify rootPath dynamically', function() {
+            ral.rootPath = 'hello';
+            ral.rootPath.should.equal('hello');
+            ral.rootPath = __dirname;
+        });
+    });
 
     describe('direct path to file', function() {
         it('should require in the right file', function() {

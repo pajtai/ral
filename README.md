@@ -6,9 +6,8 @@ Require path aliasing.
 This module allows you to easily move files and directories in your app without having to update many require calls.
 Instead you update the relevant alias definition.
 
-The paths aliases to be used are defined in `require-paths.json`. This file is found by the `ral` module using,
- `findup(process.env.REQUIRE_PATHS || '*/require-paths.json')`. The default is the root of your project, or customize
-  its path using process.env.REQUIRE_PATHS.
+The paths aliases to be used are defined in `require-paths.json`. All the paths are relative to
+the directory this file is in. To configure this directory you must set `ral.basePath` before your first usage of `ral`.
 
 For example if `require-paths.json` is:
 
@@ -16,6 +15,12 @@ For example if `require-paths.json` is:
 {
    "constants" : "lib/constants"
 }
+```
+
+Then the base path can be set in the `index.js` at the root of the project using:
+
+```javascript
+require('ral').basePath = __dirname;
 ```
 
 Then the module at `lib/constants` can be retrieved with:
@@ -36,9 +41,12 @@ will give you `lib/constants/something`.
 
 [Source (~20 lines)](https://github.com/pajtai/ral/blob/master/ral.js)
 
+TODO: test on windows
+
 Release Notes:
 
 * 2014-06-02 0.0.1 Initial Release
 * 2014-06-03 0.1.0 Added tests & process.env.REQUIRE_PATHS
 * 2014-06-03 0.1.1 Locking down node version to >=0.8
 * 2014-06-04 0.1.2 Removing hard coded path separator
+* 2014-07-10 1.0.0 ral is dynamically configurable
