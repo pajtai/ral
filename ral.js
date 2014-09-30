@@ -18,6 +18,15 @@ Object.defineProperty(alias, 'basePath', {
     }
 });
 
+Object.defineProperty(alias, 'pathsConfig', {
+    set: function(configPath) {
+        pathsConfig = configPath;
+    },
+    get: function() {
+        return pathsConfig;
+    }
+});
+
 module.exports = alias;
 
 function alias (pathString) {
