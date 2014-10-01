@@ -50,3 +50,4 @@ Release Notes:
 * 2014-06-03 0.1.1 Locking down node version to >=0.8
 * 2014-06-04 0.1.2 Removing hard coded path separator
 * 2014-07-10 1.0.0 ral is dynamically configurable
+* 2014-10-01 1.1.0 the json object ral uses as its configuration can now be directly modified w `ral.pathsConfig =`
