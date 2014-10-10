@@ -1,11 +1,11 @@
 'use strict';
 
 var ral = require('../ral'),
-    pkg = require('../package.json');
+    pkg = require('../package.json'),
+    should = require('chai').should();
 
 ral.basePath = __dirname;
 
-require('chai').should();
 
 describe('ral', function() {
 
@@ -44,6 +44,18 @@ describe('ral', function() {
     describe('path with reference to parent directory', function () {
         it('should require in the right file', function() {
             ral('dir2/../file1').should.equal('file1');
+        });
+    });
+
+    describe('errors', function() {
+        it('should throw an error with the path tried if the module was not found', function() {
+            try {
+                ral('dir123');
+            } catch (e) {
+                console.log(e.message);
+                should.exist(e);
+                e.message.should.contain('dir123');
+            }
         });
     });
 });
